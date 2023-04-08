@@ -25,18 +25,18 @@ javascript: (function () {
     const userImage = dom.querySelector(".items-end img.rounded-sm");
     const avatarUrl = b64Image(userImage);
     const title = document.title;
-    const modelVersionDiv = document.querySelector("main .w-full");
     const nonLettersRegex = /[^\p{L}\p{N}]+/gu;
     const trailingDashRegex = /(^-)|(-$)/g;
     const slug = title
       .toLowerCase()
       .replace(nonLettersRegex, "-")
       .replace(trailingDashRegex, "");
+    template.innerHTML = dom.innerHTML;
+    const modelVersionDiv = template.content.querySelector(".w-full");
     modelVersionDiv.innerHTML = updateChatHeader(
       modelVersionDiv.innerHTML,
       title
     );
-    template.innerHTML = dom.innerHTML;
     ["button", "img[aria-hidden='true']"].forEach((selector) => {
       template.content.querySelectorAll(selector).forEach((node) => {
         if (!node.closest(".math") && !isAvatar(node)) node.remove();
