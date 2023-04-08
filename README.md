@@ -1,25 +1,28 @@
-# chat-gpt
-This is ChatGPT conversation saving bookmark.
-It's started as [DEV.to article](https://dev.to/jcubic/save-chatgpt-as-html-file-dhh).
-But I've decided that It would be better to track it on GitHub and update so it will still work,
-when OpenAI change their application.
+# :brain: Export ChatGPT
 
-## What is Bookmarklet?
-Bookmarklet is a JavaScript code that run as URL from your bookmarks. To run the code you need
-to create new Bookmark and copy the code from the JavaScript file. If you don't know how you can
-open the [website](https://jcubic.github.io/chat-gpt/) and drag & drop the look to your bookmarks.
+This project was forked from [jcubic/chat-gpt](https://github.com/jcubic/chat-gpt) and edited to use the original CSS file from ChatGPT website. It consists of a [bookmarklet](https://www.freecodecamp.org/news/what-are-bookmarklets/) that generates and downloads a single HTML file containing the history of the currently opened ChatGPT conversation.
 
-You can read more about [Bookrmarklets on Wikipedia](https://en.wikipedia.org/wiki/Bookmarklet).
+**:exclamation: Don't forget to visit the [original repository](https://github.com/jcubic/chat-gpt) from which the majority of the code comes!**
 
-## Interesting projects
-The main reason for this project is to allow to save the chatGPT conversation as files on the disk.
-Here is interesting usage of the bookmark that people made:
+# :memo: Changes
 
-* [sync download chatGPT conversation with Amazon S3](http://scripting.com/2023/03/08/153909.html)
+All the features from the original project at the fork date, plus:
 
-## Contribution
-If you want to add something to the boomark, please do. Also if the code doesn't work please add issue.
+* ChatGPT styles from their source CSS file hosted here and served through [Raw GitHack](https://raw.githack.com/);
+* Customized conversation header;
+* Minor code styles and formatting edits.
 
-## License
-Copyright 2022-2023 [Jakub T. Jankiewicz](https://jakub.jankiewicz.org/)<br/>
-Released under GNU GPL v3 or later
+# :star: Use
+
+1. Copy the code from [`./bookmark.js`](https://github.com/gvmossato/export-chat-gpt/blob/master/bookmark.js);
+
+2. Create a new bookmark:
+    * Set the bookmark name as you wish;
+    * Paste the copied code in the URL field.
+
+3. Inside the ChatGPT conversation to export, just click the bookmark from the favorites bar.
+
+# :sparkles: Preview
+
+![export-chat-gpt-result](https://user-images.githubusercontent.com/41247052/230739351-0b6b87cd-d3b2-4b31-b828-cef36f003d17.png)
+
