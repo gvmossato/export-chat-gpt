@@ -1,3 +1,11 @@
+***
+
+# :warning: Deprecated
+
+ChatGPT now offers native solutions that are way better than this.
+
+***
+
 # :brain: Export ChatGPT
 
 This project was forked from [jcubic/chat-gpt](https://github.com/jcubic/chat-gpt) and edited to use the original CSS file from ChatGPT website. It consists of a [bookmarklet](https://www.freecodecamp.org/news/what-are-bookmarklets/) that generates and downloads a single HTML file containing the history of the currently opened ChatGPT conversation.
